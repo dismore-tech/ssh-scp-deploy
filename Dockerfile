@@ -6,6 +6,6 @@ RUN  apk update && \
   sshpass
 
 COPY LICENSE README.md /
-COPY entrypoint.sh with_key.sh with_pass.sh /
+COPY entrypoint.sh with_key.sh with_pass.sh without_key_or_pass.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
